@@ -1,0 +1,26 @@
+<!-- Crea un nuevo documento HTML con el título "Disposición de elementos en CSS"
+Crea un nuevo fichero CSS e impórtalo en el documento HTML principal
+Utiliza la disposición flex-box para crear una galería de 6 imágenes con los siguientes parámetros
+Las imágenes deben tener 300 píxeles de ancho
+Deben reagruparse (wrap) cuando el ancho del viewport cambia -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Disposición de elementos en CSS</title>
+</head>
+<body>
+    <div class="galeria">
+        <img class="imagenes" src="https://storage.gra.cloud.ovh.net/v1/AUTH_296c7803aa594af69d39b970927c8fb9/media/avatars/14/14GgklN3QsKkcMc8.jpeg" alt="fullmetal alchemist logo">
+        <img class="imagenes" src="https://i.pinimg.com/474x/cd/7c/97/cd7c97ace7feb2fc00162a204f0aa6cb.jpg" alt="Akatsuki logo">
+        <img class="imagenes" src="https://is4-ssl.mzstatic.com/image/thumb/Purple122/v4/e3/3f/fa/e33ffaf3-fbd3-3e6b-31ad-dae5e7bb3d32/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/256x256bb.jpg" alt="">
+        <img class="imagenes" src="https://scontent.faep24-2.fna.fbcdn.net/v/t39.30808-6/302421426_377590664569418_4903748448585198000_n.png?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Pg8-afMdWm0AX_qSXiC&_nc_ht=scontent.faep24-2.fna&oh=00_AT_PDThIAnbMfHVGLbIiVYEUA-T_4zQ32an7D3A33aY36Q&oe=6327E4B7" alt="Fire force logo">
+        <img class="imagenes" src="data:image/png;base64,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" alt="Nerv logo">
+        <img class="imagenes" src="https://i.pinimg.com/474x/7f/e4/26/7fe426c045da6f619142cd7ea4e571f6.jpg" alt="Attack on titan logo">
+    </div>
+</body>
+</html>
